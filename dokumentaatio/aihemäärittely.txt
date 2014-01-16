@@ -1,0 +1,12 @@
+Aihe: Shakkipeli
+
+Yksinkertainen shakki, jossa kaksi pelaajaa voi liikuttaa vuoroillaan omia nappuloitaan, miten sitä shakkia nyt pelataan.
+
+Käyttäjät: 1 tai 2 pelaajaa
+
+Kaikkien käyttäjien toiminnot:
+
+-pelin aloittaminen
+-nappuloiden siirtely
+-mahdollisesti siirron peruminen?
+-pelin lopettaminen
