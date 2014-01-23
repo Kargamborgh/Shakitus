@@ -6,22 +6,29 @@
 package Logiikka;
 
 import java.util.*;
+;
 
 /**
  *
  * @author nkorkiak@cs
  */
-public class Nappula {
+public abstract class Nappula {
 
     private String tyyppi;
-    private HashMap<Integer,Integer> paikka;
     
-    public Nappula(String tyyppi, HashMap paikka) {
+    public Nappula(String tyyppi) {
 
         this.tyyppi = tyyppi;
-        this.paikka = paikka;
         
     }
+    
+    public abstract void siirra(); {
+        
+    }
+    
+    public abstract boolean onkoLaillinen(); 
+        
+    
     
     @Override
     public String toString() {

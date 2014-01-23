@@ -5,11 +5,15 @@
  */
 
 package Logiikka;
-
+import java.util.*;
 /**
  *
  * @author nkorkiak@cs
  */
 public class Peli {
+    
+    public Peli() {
+        
+    }
     
 }

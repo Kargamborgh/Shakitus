@@ -10,6 +10,6 @@ package Logiikka;
  *
  * @author nkorkiak@cs
  */
-public interface nappulat {
+public class Sijainti {
     
 }

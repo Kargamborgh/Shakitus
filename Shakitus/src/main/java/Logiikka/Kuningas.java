@@ -4,16 +4,12 @@
  * and open the template in the editor.
  */
 
-package Main;
+package Logiikka;
 
 /**
  *
  * @author nkorkiak@cs
  */
-public class Main {
-    
-    public static void main(String[] args) {
-        
-    }
+public class Kuningas {
     
 }
