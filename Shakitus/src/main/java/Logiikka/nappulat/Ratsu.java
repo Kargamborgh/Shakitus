@@ -12,13 +12,12 @@ import Logiikka.Nappula;
  *
  * @author nkorkiak@cs
  */
-public class Kuningas extends Nappula {
-
-    public Kuningas() {
-        super.setTyyppi('K');
-        
+public class Ratsu extends Nappula {
+    
+    public Ratsu() {
+        super.setTyyppi('T');
     }
-        
+
     @Override
     public void siirra() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
