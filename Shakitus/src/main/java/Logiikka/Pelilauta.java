@@ -14,16 +14,20 @@ import java.util.*;
  */
 public class Pelilauta {
 
+    private int x;
+    private int y;
     private char[][] lauta;
     private List<Nappula> valkoiset;
     private List<Nappula> mustat;
 
     public Pelilauta() {
-        /*char[][] lauta = new char[rivi][sarake];*/ //laudan alustus kusee, korjataan seuraavaan dedikseen että saadaan jotain buildattavaa projektia ulos
+        this.x = 8;
+        this.y = 8; //purkkaviritys, korjataan seuraavaan dedikseen
+        lauta = new char[x][y]; 
         //tarkoitus tehdä kaksiulotteinen taulukko pelilaudan ruuduista
 
-        for (int rivi = 0; rivi <= 7; rivi++) {
-            for (int sarake = 0; sarake <= 7; sarake++) {
+        for (int rivi = 0; rivi < 8; rivi++) {
+            for (int sarake = 0; sarake < 8; sarake++) {
                 lauta[rivi][sarake] = (char) ('1' + rivi * 7 + sarake); 
             }
         }
