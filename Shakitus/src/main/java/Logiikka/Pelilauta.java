@@ -12,7 +12,23 @@ import java.util.*;
  */
 public class Pelilauta {
     
+    private char[][] lauta;
+    
     public Pelilauta() {
         
+       for (int rivi = 0; rivi < 7; rivi++) {
+           for (int sarake = 0; sarake < 7; sarake++) {
+               lauta[rivi][sarake] = (char) ('1' + rivi * 7 + sarake);
+           }
+       }
     }
-}
+       public void tulostaLauta() {
+           for (int rivi = 0; rivi < 7; rivi++) {
+               for (int sarake = 0; sarake < 7; sarake++) {
+                   System.out.println(lauta[rivi][sarake]);
+               }
+           }
+       }
+        
+    }
+
