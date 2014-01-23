@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Logiikka.nappulat;
 
 import Logiikka.Nappula;
@@ -13,9 +12,11 @@ import Logiikka.Nappula;
  * @author nkorkiak@cs
  */
 public class Sotilas extends Nappula {
-    
-    public Sotilas(int x) {
+
+    public Sotilas(int x,int y, boolean vari) {
+        super(x, y, vari);
         super.setTyyppi('P');
+        
     }
 
     @Override
@@ -27,5 +28,5 @@ public class Sotilas extends Nappula {
     public boolean onkoLaillinen() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

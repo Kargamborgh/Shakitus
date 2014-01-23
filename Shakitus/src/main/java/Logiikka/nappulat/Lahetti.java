@@ -12,9 +12,10 @@ import Logiikka.Nappula;
  *
  * @author nkorkiak@cs
  */
-public class Lähetti extends Nappula {
+public class Lahetti extends Nappula {
     
-    public Lähetti() {
+    public Lahetti(int x,int y, boolean vari) {
+        super(x,y,vari);
         super.setTyyppi('B');
     }
 

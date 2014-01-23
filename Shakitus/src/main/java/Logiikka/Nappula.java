@@ -16,10 +16,11 @@ public abstract class Nappula {
 
     private char tyyppi;
     private boolean vari;
+    private Sijainti sijainti;
     
-    public Nappula() {
-
-        
+    public Nappula(int x, int y, boolean vari) {
+        sijainti = new Sijainti(x,y);
+        this.vari = vari;
     }
     
     public abstract void siirra(); {
@@ -30,6 +31,10 @@ public abstract class Nappula {
         
     public void setTyyppi(char tyyppi) {
         
+    }
+    
+    public void setVari(boolean vari) { //true = white, false = black
+        this.vari = vari;
     }
     
     @Override

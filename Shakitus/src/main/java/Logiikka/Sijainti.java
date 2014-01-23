@@ -15,8 +15,14 @@ public class Sijainti {
     private int x;
     private int y;
     
-    public Sijainti() {
-        
+    public Sijainti(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    
+    @Override
+    public String toString() {
+        return "x: +" + x + ", y: " + y + "";
     }
     
 }

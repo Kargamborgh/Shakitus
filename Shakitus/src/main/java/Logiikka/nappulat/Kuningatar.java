@@ -14,7 +14,8 @@ import Logiikka.Nappula;
  */
 public class Kuningatar extends Nappula {
     
-    public Kuningatar() {
+    public Kuningatar(int x, int y, boolean vari) {
+        super(x,y,vari);
         super.setTyyppi('Q');
     }
 
