@@ -5,6 +5,7 @@
 package shakitus.shakitus;
 
 import Logiikka.*;
+import Logiikka.nappulat.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -50,6 +51,25 @@ public class ShakitusTest {
         
         assertNotNull("Pelilauta on luotu",pelilauta);
     }
+    @Test
+    public void SotilaitaLuodaan() {
+        Sotilas sotilas = new Sotilas(1,1,true);
+        
+        assertNotNull("Sotilaita on olemassa",sotilas);
+    }
     
+    @Test
+    public void tornejaLuodaan() {
+        Torni torni = new Torni(0,0,true);
+        
+        assertNotNull("Torneja on olemassa",torni);
+    }
+    
+    @Test
+    public void sijaintiOnOlemassa() {
+        Sijainti sijainti = new Sijainti(1,1);
+        
+        assertNotNull("Sijainti on olemassa",sijainti);
+    }
     
 }

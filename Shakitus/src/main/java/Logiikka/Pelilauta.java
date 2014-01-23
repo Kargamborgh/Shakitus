@@ -19,7 +19,7 @@ public class Pelilauta {
     private List<Nappula> mustat;
 
     public Pelilauta() {
-
+        /*char[][] lauta = new char[rivi][sarake];*/ //laudan alustus kusee, korjataan seuraavaan dedikseen että saadaan jotain buildattavaa projektia ulos
         //tarkoitus tehdä kaksiulotteinen taulukko pelilaudan ruuduista
 
         for (int rivi = 0; rivi <= 7; rivi++) {
