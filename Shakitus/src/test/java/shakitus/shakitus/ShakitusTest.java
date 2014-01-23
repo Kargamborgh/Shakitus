@@ -38,7 +38,18 @@ public class ShakitusTest {
     }
 
     @Test
-    public void peliLuoPelilaudan() {
+    public void peliLuodaan() {
         Peli peli = new Peli();
+        
+        assertNotNull("Peli on luotu",peli);
     }
+    
+    @Test
+    public void peliLautaLuodaan() {
+        Pelilauta pelilauta = new Pelilauta();
+        
+        assertNotNull("Pelilauta on luotu",pelilauta);
+    }
+    
+    
 }
