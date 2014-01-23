@@ -4,3 +4,13 @@ Github-säätö tehty, repositorio luotu, homma laitettu ns. rullaamaan
 
 Aikaa käytetty: ~1h
 
+23.1.2014
+
+Varsinainen koodaus aloitettu, määrittelykaavio piirretty
+
+-logiikka laitettu alulle, "struktuuri" selkeä
+-pelinappuloiden generointi jossain määrin valmis
+-seuraavana pelinappuloiden tulostus
+-hamassa tulevaisuudessa GUI ja muu
+
+Aikaa käytetty: ~4h
