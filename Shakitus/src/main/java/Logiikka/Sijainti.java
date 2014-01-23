@@ -12,4 +12,11 @@ package Logiikka;
  */
 public class Sijainti {
     
+    private int x;
+    private int y;
+    
+    public Sijainti() {
+        
+    }
+    
 }

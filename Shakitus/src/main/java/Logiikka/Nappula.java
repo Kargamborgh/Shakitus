@@ -14,11 +14,11 @@ import java.util.*;
  */
 public abstract class Nappula {
 
-    private String tyyppi;
+    private char tyyppi;
+    private boolean vari;
     
-    public Nappula(String tyyppi) {
+    public Nappula() {
 
-        this.tyyppi = tyyppi;
         
     }
     
@@ -28,7 +28,9 @@ public abstract class Nappula {
     
     public abstract boolean onkoLaillinen(); 
         
-    
+    public void setTyyppi(char tyyppi) {
+        
+    }
     
     @Override
     public String toString() {

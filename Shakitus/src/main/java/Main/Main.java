@@ -6,6 +6,8 @@
 
 package Main;
 
+import Logiikka.Peli;
+
 /**
  *
  * @author nkorkiak@cs
@@ -13,7 +15,7 @@ package Main;
 public class Main {
     
     public static void main(String[] args) {
-        
+          Peli shakkipeli = new Peli();
     }
     
 }

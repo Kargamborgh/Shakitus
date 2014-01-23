@@ -13,7 +13,8 @@ import java.util.*;
 public class Peli {
     
     public Peli() {
-        
+        Pelilauta lauta = new Pelilauta();
+        lauta.tulostaLauta();
     }
     
 }
