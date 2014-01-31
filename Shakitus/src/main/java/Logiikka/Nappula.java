@@ -30,13 +30,12 @@ public abstract class Nappula {
     public abstract boolean onkoLaillinen(); 
         
     public void setTyyppi(char tyyppi) {
-        
+        this.tyyppi = tyyppi;
     }
     
-    
-    
-    public void setVari(boolean vari) { //true = valkea, false = musta
-        this.vari = vari;
+    public void tulostaNappula() {
+        System.out.print(sijainti);
+        System.out.println("," + vari);
     }
     
     @Override

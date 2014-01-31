@@ -51,7 +51,8 @@ public class Pelilauta {
         for (Nappula n : valkoiset) {
             for (int i = 0; i <= 7; i++) {
                 int j = 1;
-                valkoiset.add(new Sotilas(i,j,true));
+                n = new Sotilas(i,j,true);
+                valkoiset.add(n);
             }
             int j = 0;
             for (int i = 0; i <= 7; i += 7) {
@@ -73,7 +74,8 @@ public class Pelilauta {
         for (Nappula n : mustat) {
             for (int i = 0; i <= 7; i++) {
                 int j = 6;
-                mustat.add(new Sotilas(i,j,false));
+                n = new Sotilas(i,j,false);
+                mustat.add(n);
             }
                 int j = 7;
             for (int i = 0; i <= 7; i += 7) {
@@ -95,10 +97,10 @@ public class Pelilauta {
     
     public void tulostaNappulat() {
             for (Nappula n : valkoiset) {
-                System.out.println(valkoiset);
+                n.tulostaNappula();
             }
             for (Nappula n : mustat) {
-                System.out.println(mustat);
+                n.tulostaNappula();
             }
         } 
     }

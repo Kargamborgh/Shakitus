@@ -14,7 +14,7 @@ public class Peli {
     
     public Peli() {
         Pelilauta lauta = new Pelilauta();
-        //lauta.tulostaLauta();
+        lauta.tulostaLauta();
         lauta.luoNappulat();
         lauta.tulostaNappulat();
     }
