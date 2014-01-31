@@ -22,7 +22,7 @@ public class Pelilauta {
 
     public Pelilauta() {
         this.x = 8;
-        this.y = 8; //purkkaviritys, korjataan seuraavaan dedikseen
+        this.y = 8; //purkkaviritys ":D"
         lauta = new char[x][y]; 
         //tarkoitus tehdä kaksiulotteinen taulukko pelilaudan ruuduista
 
@@ -43,7 +43,7 @@ public class Pelilauta {
         }
     }
     
-    private void luoNappulat() {
+    public void luoNappulat() {
         
         valkoiset = new ArrayList<Nappula>();
         mustat = new ArrayList<Nappula>();
@@ -51,46 +51,56 @@ public class Pelilauta {
         for (Nappula n : valkoiset) {
             for (int i = 0; i <= 7; i++) {
                 int j = 1;
-                valkoiset.add(new Sotilas(i,j,valkea));
+                valkoiset.add(new Sotilas(i,j,true));
             }
             int j = 0;
             for (int i = 0; i <= 7; i += 7) {
-                valkoiset.add(new Torni(i,j,valkea));
+                valkoiset.add(new Torni(i,j,true));
             }
             for (int i = 1; i <= 6; i += 5) {
-                valkoiset.add(new Ratsu(i,j,valkea));
+                valkoiset.add(new Ratsu(i,j,true));
             }
             for (int i = 2; i <= 5; i+= 3) {
-                valkoiset.add(new Lahetti(i,j,valkea));
+                valkoiset.add(new Lahetti(i,j,true));
             }
                 int i = 3;
-                valkoiset.add(new Kuningatar(i,j,valkea));
+                valkoiset.add(new Kuningatar(i,j,true));
                 i = 4;
-                valkoiset.add(new Kuningas(i,j,valkea));
+                valkoiset.add(new Kuningas(i,j,true));
             
         }
         
         for (Nappula n : mustat) {
             for (int i = 0; i <= 7; i++) {
                 int j = 6;
-                mustat.add(new Sotilas(i,j,musta));
+                mustat.add(new Sotilas(i,j,false));
             }
                 int j = 7;
             for (int i = 0; i <= 7; i += 7) {
-                mustat.add(new Torni(i,j,musta));
+                mustat.add(new Torni(i,j,false));
             }
             for (int i = 1; i <= 6; i += 5) {
-                mustat.add(new Ratsu(i,j,musta));
+                mustat.add(new Ratsu(i,j,false));
             }
             for (int i = 2; i <= 5; i+= 3) {
-                mustat.add(new Lahetti(i,j,musta));
+                mustat.add(new Lahetti(i,j,false));
             }
                 int i = 3;
-                mustat.add(new Kuningatar(i,j,musta));
+                mustat.add(new Kuningatar(i,j,false));
                 i = 4;
-                mustat.add(new Kuningas(i,j,musta));
+                mustat.add(new Kuningas(i,j,false));
            
         }
     }
+    
+    public void tulostaNappulat() {
+            for (Nappula n : valkoiset) {
+                System.out.println(valkoiset);
+            }
+            for (Nappula n : mustat) {
+                System.out.println(mustat);
+            }
+        } 
+    }
 
-}
+

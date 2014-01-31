@@ -14,7 +14,7 @@ import Logiikka.Nappula;
  */
 public class Kuningas extends Nappula {
 
-    public Kuningas(int x,int y, enum vari) {
+    public Kuningas(int x,int y, boolean vari) {
         super(x,y, vari);
         super.setTyyppi('K');
         

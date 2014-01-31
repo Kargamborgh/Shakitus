@@ -14,7 +14,7 @@ import Logiikka.Nappula;
  */
 public class Lahetti extends Nappula {
     
-    public Lahetti(int x,int y, enum vari) {
+    public Lahetti(int x,int y, boolean vari) {
         super(x,y,vari);
         super.setTyyppi('B');
     }

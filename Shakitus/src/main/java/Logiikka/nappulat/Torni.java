@@ -14,7 +14,7 @@ import Logiikka.Nappula;
  */
 public class Torni extends Nappula {
     
-    public Torni(int x, int y, enum vari) {
+    public Torni(int x, int y, boolean vari) {
         
         super(x,y,vari);
         super.setTyyppi('R');
