@@ -28,14 +28,14 @@ public class Pelilauta {
 
         for (int rivi = 0; rivi < 8; rivi++) {
             for (int sarake = 0; sarake < 8; sarake++) {
-                lauta[rivi][sarake] = (char) ('1' + rivi * 7 + sarake); 
+                lauta[rivi][sarake] = (char) ('1' + rivi * 8 + sarake); 
             }
         }
     }
 
     public void tulostaLauta() {
-        for (int rivi = 0; rivi <= 7; rivi++) {
-            for (int sarake = 0; sarake <= 7; sarake++) {
+        for (int rivi = 0; rivi < 8; rivi++) {
+            for (int sarake = 0; sarake < 8; sarake++) {
                 System.out.println(lauta[rivi][sarake]);
             }
         }
