@@ -17,8 +17,8 @@ public class Pelilauta {
     private int x;
     private int y;
     private char[][] lauta;
-    private List<Nappula> valkoiset;
-    private List<Nappula> mustat;
+    private ArrayList<Nappula> valkoiset;
+    private ArrayList<Nappula> mustat;
 
     public Pelilauta() {
         this.x = 8;
@@ -53,6 +53,7 @@ public class Pelilauta {
                 int j = 1;
                 n = new Sotilas(i,j,true);
                 valkoiset.add(n);
+                System.out.println(n);
             }
             int j = 0;
             for (int i = 0; i <= 7; i += 7) {
