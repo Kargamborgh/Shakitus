@@ -15,10 +15,10 @@ import java.util.*;
 public abstract class Nappula {
 
     private char tyyppi;
-    private boolean vari;
+    private enum vari {valkea, musta}
     private Sijainti sijainti;
     
-    public Nappula(int x, int y, boolean vari) {
+    public Nappula(int x, int y, enum vari) {
         sijainti = new Sijainti(x,y);
         this.vari = vari;
     }

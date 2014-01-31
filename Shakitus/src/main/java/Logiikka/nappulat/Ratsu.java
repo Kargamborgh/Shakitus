@@ -14,7 +14,7 @@ import Logiikka.Nappula;
  */
 public class Ratsu extends Nappula {
     
-    public Ratsu(int x, int y, boolean vari) {
+    public Ratsu(int x, int y, enum vari) {
         super(x,y,vari);
         super.setTyyppi('T');
     }

@@ -13,7 +13,7 @@ import Logiikka.Nappula;
  */
 public class Sotilas extends Nappula {
 
-    public Sotilas(int x,int y, boolean vari) {
+    public Sotilas(int x,int y, enum vari) {
         super(x, y, vari);
         super.setTyyppi('P');
         
